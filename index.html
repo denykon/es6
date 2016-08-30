@@ -7,8 +7,21 @@
 </head>
 <body>
 <h1 class="header">Please enter a search parameters</h1>
-<section id="form">
-
+<section id="searchForm">
+    <label>Search:</label>
+    <input type="text" name="search" title="Search"><br>
+    <label>Filter:</label>
+    <input type="text" name="filter" title="Filter"><br>
+    <label>Sort:</label>
+    <select title="Sort" name="sort">
+        <option>newest</option>
+        <option>oldest</option>
+    </select><br>
+    <label>Highlighting:</label>
+    <input type="checkbox" name="highlighting" title="Highlighting"><br>
+    <label>Page:</label>
+    <input type="number" name="page" title="Page"><br>
+    <a id="searchBtn" href="#">Search</a>
 </section>
 <section>
     <ul id="resultList"></ul>
